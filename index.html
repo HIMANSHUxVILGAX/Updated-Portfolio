@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himaanshu Badgujar</title>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/b98dca2d53.js" crossorigin="anonymous"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background animations -->
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+    
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Placeholder for logo. Replace with your actual logo image. -->
+            <img src="logo.png" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Mobile menu icon -->
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Game Developer • Linux • C++ • Cybersecurity</p>
+            <h1 class="hero-title">Hi, I'm Himaanshu</h1>
+            <p class="hero-description">
+                Passionate Computer Science student creating innovative solutions through cutting-edge technology and creative problem-solving
+            </p>
+            <a href="#about" class="cta-button">Explore My Journey</a>
+        </div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-container">
+            <div class="about-image slide-left">
+                <!-- Placeholder for user image. Replace with your actual image. -->
+                <img src="himanshu.jpg" alt="Himaanshu Badgujar">
+            </div>
+            <div class="about-content slide-right">
+                <p class="about-text">
+                    Hello! I'm <span class="highlight">Himaanshu Badgujar</span>, a passionate and driven Computer Science student currently pursuing my B.Tech degree. I specialize in Web Development, Cybersecurity, and Software Engineering, aiming to craft innovative, secure, and user-centric solutions for real-world problems.
+                </p>
+                <p class="about-text">
+                    My technical toolkit includes strong command over C++, Python, Linux, and modern web technologies. I’m also actively expanding my expertise in Unreal Engine, diving into game development and immersive environments.
+
+Over the years, I’ve completed a wide range of projects — from ethical hacking simulations to dynamic web apps and game prototypes. I’m always eager to explore new technologies and apply them to practical scenarios.
+                </p>
+                <p class="about-text">
+                  With a keen eye for both front-end design and back-end logic, I believe in building platforms that are not just functional, but also secure and engaging. Whether it’s developing a game, debugging a Linux environment, or enhancing application security, I thrive on pushing the boundaries of what technology can achieve.
+                    <br><br>
+                  And above all, I’m deeply inspired by someone very special in my life — everything I do, every line of code I write, is fueled by the dream of building a future for both of us.
+                </p>
+                
+                <!-- Tabs for Education, Skills, Projects -->
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <div class="tab-button active" onclick="openTab(event, 'education')">Education</div>
+                        <div class="tab-button" onclick="openTab(event, 'skills')">Skills</div>
+                        <div class="tab-button" onclick="openTab(event, 'projects')">Projects</div>
+                    </div>
+                    
+                    <div id="education" class="tab-content active">
+                        <ul>
+                            <li><span>2020 - 10th Grade</span><br>70%, CBSE<br>Dronacharya International School, Jaipur</li>
+                            <li><span>2023 - 12th Grade</span><br>PCM/62%, RBSE<br>Eklavya Academy (Mehta Public School), Jaipur</li>
+                            <li><span>Currently Pursuing</span><br>B.Tech in Computer Science<br>Sri Balaji College of Engineering and Technology, Jaipur</li>
+                            <li><span>Level 1</span><br>6.85 CGPA (CSE)</li>
+                            <li><span>Level 2</span><br>7.45 CGPA (CSE)</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="skills" class="tab-content">
+                        <ul>
+                            <li><span>Unreal engine</span><br>Game development (BluePrints/c++)</li>
+                            <li><span>Linux</span><br>Zorin/Kali distributions</li>
+                            <li><span>Web Development</span><br>Portfolio creation and showcase development</li>
+                            <li><span>C++</span><br>Object-Oriented Programming and Data Structures/ Header files</li>
+                            <li><span>Python</span><br>Pygame (Basic level game development)</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div id="projects" class="tab-content">
+                        <ul>
+                            <li><span>UE5 Project</span><br>OpenWorld map</li>
+                            <li><span>Python Project</span><br>Pygame Pong Game</li>
+                            <li><span>Web Portfolio</span><br>Personal portfolio website, E- commerce, Showcase Game selling web</li>
+                            <li><span>C++ Projects</span><br>Login System, Student Database Management, CGPA Calculator, Scientific Calculator, Rock Paper Scissors Game, Casino Number Guessing Game</li>
+                            <li><span>Linux Project</span><br>Bash tool</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title fade-in">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <i class="fa-solid fa-code service-icon"></i>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">I can develop modern, responsive websites for your business or personal use. Specializing in clean, user-friendly designs with cutting-edge technologies.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <i class="fa-solid fa-square-binary service-icon"></i>
+                <h3 class="service-title">C++ Programming</h3>
+                <p class="service-description">Expert assistance in C++ programming language, including problem-solving, algorithm development, and application creation using modern C++ standards.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <i class="fa-brands fa-linux service-icon"></i>
+                <h3 class="service-title">Linux Systems</h3>
+                <p class="service-description">Comprehensive Linux support and guidance, specializing in Zorin and Kali distributions. From system administration to security applications.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <i class="fa-brands fa-python service-icon"></i>
+                <h3 class="service-title">Cybersecutiry</h3>
+                <p class="service-description">I'm certified by Google, IBM USA very specialized in analytics, security, and testing. </p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            <div class="service-card fade-in">
+                <i class="fa-brands fa-gamepad service-icon"></i>
+                <h3 class="service-title">Unreal-Engine</h3>
+                <p class="service-description">I can Design & Develop AA, AAA games.</p>
+                <a href="#" class="service-link">Learn More →</a>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info slide-left">
+                <div class="contact-item">
+                    <i class="fa-solid fa-user"></i>
+                    <div>
+                        <h3>Name</h3>
+                        <p>Himaanshu Badgujar</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>hbadgujar517@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 9257797482<br>+91 9314397482</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Jaipur, Rajasthan, India</p>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for resume. Replace with your actual resume file. -->
+                <a href="Himanshu Badgujar - Resume.pdf" download class="resume-btn">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/himaanshu_20th/" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.github.com/HIMANSHUxVILGAX" class="social-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@real1917" class="social-link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-form slide-right">
+                <form name="submit-to-google-sheet">
+                    <div class="form-group">
+                        <input type="text" name="Name" placeholder="Your Name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="Review" placeholder="Rate my portfolio (1-10)" class="form-input" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" rows="6" placeholder="Any suggestions or feedback..." class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <script>
+        // Function to create floating particles in the background
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50; // Number of particles to create
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                // Randomize initial position and animation delays/durations for a varied effect
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Function to handle navigation bar scroll effect (shrink/expand)
+        function handleNavScroll() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled'); // Add 'scrolled' class if scrolled down
+            } else {
+                navbar.classList.remove('scrolled'); // Remove 'scrolled' class if at the top
+            }
+        }
+
+        // Function for smooth scrolling when clicking navigation links
+        function smoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    const target = document.querySelector(this.getAttribute('href')); // Get the target element
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth', // Smooth scroll animation
+                            block: 'start' // Scroll to the start of the target element
+                        });
+                    }
+                });
+            });
+        }
+
+        // Function to handle tab switching in the About Me section
+        function openTab(event, tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove 'active' class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show the selected tab content and mark the clicked button as active
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active'); // Use currentTarget for the element that triggered the event
+        }
+
+        // Function to initialize Intersection Observer for scroll animations
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1, // Trigger when 10% of the element is visible
+                rootMargin: '0px 0px -50px 0px' // Adjust the viewport margin for triggering
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Add 'visible' class when element enters viewport
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all elements with animation classes
+            document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Function to create a cursor trail effect
+        function createCursorTrail() {
+            const trail = [];
+            const trailLength = 20; // Number of dots in the trail
+            
+            for (let i = 0; i < trailLength; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'cursor-trail-dot'; // Use a specific class for styling
+                dot.style.opacity = (i / trailLength).toString(); // Fade out dots further down the trail
+                document.body.appendChild(dot);
+                trail.push(dot);
+            }
+            
+            let mouseX = 0, mouseY = 0; // Initialize mouse coordinates
+            
+            // Update mouse coordinates on mouse movement
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+            
+            // Animation loop for the trail effect
+            function animateTrail() {
+                let x = mouseX, y = mouseY;
+                
+                trail.forEach((dot, index) => {
+                    // Move each dot towards the position of the previous dot (or mouse for the first dot)
+                    const nextDot = trail[index + 1] || trail[0]; // Loop back to the first dot for smooth movement
+                    dot.style.left = x + 'px';
+                    dot.style.top = y + 'px';
+                    
+                    if (nextDot) {
+                        // Interpolate position for a smoother trail effect
+                        x += (parseFloat(nextDot.style.left) - x) * 0.3;
+                        y += (parseFloat(nextDot.style.top) - y) * 0.3;
+                    }
+                });
+                
+                requestAnimationFrame(animateTrail); // Request next animation frame
+            }
+            
+            animateTrail(); // Start the animation
+        }
+
+        // Function to initialize 3D tilt effect for service cards
+        function init3DTilt() {
+            const cards = document.querySelectorAll('.service-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect(); // Get card's size and position
+                    const x = e.clientX - rect.left; // X position relative to the card
+                    const y = e.clientY - rect.top; // Y position relative to the card
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    // Calculate rotation based on mouse position relative to card center
+                    const rotateX = (y - centerY) / 10;
+                    const rotateY = (centerX - x) / 10;
+                    
+                    // Apply 3D transform
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    // Reset transform on mouse leave
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+                });
+            });
+        }
+
+        // Function to handle form submission to Google Sheets
+        function initFormSubmission() {
+            // IMPORTANT: Replace this with your actual Google Sheet Web App URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwV_Z_SYhFCqaFVH2V4iLR-vfhQ2fgI_Xqzcmy6pnk21szmk3SgLihEqX_1W1TQOw/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            
+            form.addEventListener('submit', e => {
+                e.preventDefault(); // Prevent default form submission
+                
+                const submitBtn = form.querySelector('.submit-btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...'; // Change button text to indicate sending
+                submitBtn.disabled = true; // Disable button to prevent multiple submissions
+                
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        console.log('Success!', response);
+                        
+                        // Success animation and message
+                        submitBtn.textContent = 'Message Sent!';
+                        submitBtn.style.background = 'linear-gradient(45deg, #00ff88, #00ffff)';
+                        
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText; // Restore original text
+                            submitBtn.style.background = 'linear-gradient(45deg, var(--primary-color), var(--secondary-color))'; // Restore original background
+                            submitBtn.disabled = false; // Re-enable button
+                            form.reset(); // Reset form fields
+                        }, 3000);
+                        
+                        showNotification('Thank you for your feedback!', 'success'); // Show success notification
+                    })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        submitBtn.textContent = 'Error - Try Again'; // Indicate error
+                        submitBtn.style.background = 'linear-gradient(45deg, #ff4444, #ff0088)'; // Change background for error
+                        
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.style.background = 'linear-gradient(45deg, var(--primary-color), var(--secondary-color))';
+                            submitBtn.disabled = false;
+                        }, 3000);
+                        
+                        showNotification('Something went wrong. Please try again.', 'error'); // Show error notification
+                    });
+            });
+        }
+
+        // Function to display a notification message
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.className = `notification ${type}`; // Add base and type classes
+            
+            document.body.appendChild(notification);
+            
+            // Animate notification in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Animate notification out and remove after a delay
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300); // Allow time for exit animation
+            }, 4000);
+        }
+
+        // Function to handle mobile menu toggle
+        function initMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active'); // Toggle 'active' class on nav links
+                mobileMenu.classList.toggle('active'); // Toggle 'active' class on mobile menu icon (for animation if any)
+            });
+        }
+
+        // Function to initialize parallax effect for floating shapes
+        function initParallax() {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset; // Get current scroll position
+                const shapes = document.querySelectorAll('.shape');
+                
+                shapes.forEach((shape, index) => {
+                    const speed = 0.5 + (index * 0.1); // Different speeds for different shapes
+                    shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+                });
+            });
+        }
+
+        // Keyboard navigation for sections (Arrow Up/Down)
+        function initKeyboardNavigation() {
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                    e.preventDefault(); // Prevent default scroll behavior
+                    const sections = ['home', 'about', 'services', 'contact'];
+                    
+                    // Find the currently visible section
+                    const current = sections.find(section => {
+                        const element = document.getElementById(section);
+                        if (!element) return false; // Ensure element exists
+                        const rect = element.getBoundingClientRect();
+                        // Check if the section is mostly in view
+                        return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+                    });
+                    
+                    const currentIndex = sections.indexOf(current);
+                    let nextIndex;
+                    
+                    if (e.key === 'ArrowDown') {
+                        nextIndex = (currentIndex + 1) % sections.length; // Loop to first section if at end
+                    } else {
+                        nextIndex = (currentIndex - 1 + sections.length) % sections.length; // Loop to last section if at beginning
+                    }
+                    
+                    // Scroll to the next/previous section
+                    document.getElementById(sections[nextIndex]).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        }
+
+        // Initialize all functionalities when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles(); // Create background particles
+            smoothScroll(); // Enable smooth scrolling for nav links
+            initScrollAnimations(); // Initialize scroll-triggered animations
+            createCursorTrail(); // Create the custom cursor trail
+            init3DTilt(); // Enable 3D tilt effect on service cards
+            initFormSubmission(); // Set up form submission
+            initMobileMenu(); // Initialize mobile menu toggle
+            initParallax(); // Enable parallax effect
+            initKeyboardNavigation(); // Enable keyboard navigation
+            
+            // Add scroll event listener for navigation bar effect
+            window.addEventListener('scroll', handleNavScroll);
+            
+            // Add initial loading animation for the body
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 1s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
